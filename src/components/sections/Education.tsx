@@ -17,7 +17,9 @@ export const Education = () => {
       role: "B.S. Computer Science, Minor in Statistics",
       image: "/umd.png",
       bullets: [
-        "Honors: Summa Cum Laude (GPA: 4.0/4.0); Dean's List; College Park Scholars: Environment, Technology, & Economy Citation",
+        "Summa Cum Laude (GPA: 4.0/4.0)",
+        "Dean's List",
+        "College Park Scholars: Environment, Technology, & Economy Citation",
       ],
     },
     {

@@ -12,40 +12,19 @@ export const Projects = () => {
     bullets: string[];
   }[] = [
     {
-      project: "Portfolio Website",
-      dates: "Aug 2021 \u2013 Present",
-      buttons: [
-        {
-          label: "GitHub",
-          href: "https://github.com/neelshah400/neelshah",
-          icon: "akar-icons:github-fill",
-        },
-        {
-          label: "Website",
-          href: "https://www.neelshah.dev/",
-          icon: "akar-icons:globe",
-        },
-      ],
-      image: "/favicon.png",
-      bullets: [
-        "Created and deployed a responsive, mobile-friendly portfolio website showcasing my skills, education, experience, and projects",
-        "Built the site using React/Next.js (TypeScript), implementing a component-based approach for easy updates via edits to JSON data",
-      ],
-    },
-    {
       project: "MenuMuse",
-      dates: "May 2024 \u2013 Present",
+      dates: "May 2024 \u2013 Jun 2024",
       buttons: [
         {
           label: "Website",
           href: "https://menumuse.neelshah.dev/",
-          icon: "akar-icons:globe",
+          icon: "mdi:web",
         },
       ],
       image: "/menumuse.png",
       bullets: [
         "Created an AI-powered restaurant search chatbot that you can chat with using natural language to search for restaurants, ask questions, summarize reviews, and more",
-        "Built the site using React/Next.js (TypeScript) for the frontend/backend, Google's Gemini 1.5 Flash for the model, the Google Maps Platform Places API for restaurant information, and Redis for saving chat history",
+        "Built the site using React/Next.js (TypeScript) for the frontend/backend, Google's Gemini 1.5 Flash for chat completions, the Google Maps Platform Places API for restaurant information, and Redis for saving chat history",
       ],
     },
     {
@@ -55,18 +34,18 @@ export const Projects = () => {
         {
           label: "GitHub",
           href: "https://github.com/neelshah400/NBA-Playoff-Predictions",
-          icon: "akar-icons:github-fill",
+          icon: "mdi:github",
         },
         {
           label: "Website",
           href: "https://nba.neelshah.dev",
-          icon: "akar-icons:globe",
+          icon: "mdi:web",
         },
       ],
       image: "/nba.jpg",
       bullets: [
-        "Analyzed the factors influencing teams’ playoff success using Python, going through each step of the data science pipeline",
-        "Accurately predicted the number of playoff games a given team would win by leveraging regular season data to train 8 different machine learning models, with the best (a decision tree) achieving a mean deviation of less than 2.5 games",
+        "Analyzed the factors influencing teams' playoff success using Python, going through each step of the data science pipeline",
+        "Accurately predicted the number of playoff games a given team would win by leveraging regular season data to train 8 different ML models, with the best (a decision tree) achieving a mean deviation of less than 2.5 games",
         "Performed an exhaustive grid search with 5-fold cross-validation to find the optimal parameters for each model",
       ],
     },
