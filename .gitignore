@@ -1,0 +1,58 @@
+# ========== Compound Engineering ==============================================
+
+# Local config
+.compound-engineering/*.local.yaml
+
+# ========== macOS =============================================================
+
+# Finder
+.DS_Store
+
+# ========== Nix ===============================================================
+
+# Ignore build outputs from performing a nix-build or `nix build` command
+result
+result-*
+
+# Ignore automatically generated direnv output
+.direnv
+
+# Ignore NixOS interactive test driver history
+**/.nixos-test-history
+
+# ========== Vite+ =============================================================
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# AI agent worktrees
+.claude/worktrees/
+!.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Ignore VP_HOME
+.vite-plus
