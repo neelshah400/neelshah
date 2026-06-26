@@ -56,3 +56,6 @@ dist-ssr
 
 # Ignore VP_HOME
 .vite-plus
+
+# Astro generated types
+.astro/

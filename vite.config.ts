@@ -17,7 +17,7 @@ export default defineConfig({
       "fmt:full": {
         command: "vp fmt",
         dependsOn: ["fmt:nix"],
-        cache: true,
+        input: [{ auto: true }, "!node_modules/**", "!.vite-plus/**"],
       },
       "check:nix": {
         command: "nix flake check",
@@ -26,15 +26,20 @@ export default defineConfig({
       "check:full": {
         command: "vp check",
         dependsOn: ["check:nix"],
-        cache: true,
+        input: [{ auto: true }, "!node_modules/**", "!.vite-plus/**"],
+      },
+      build: {
+        command: "vp run -r build",
+        input: [{ auto: true }, "!apps/**/dist/**", "!packages/**/dist/**", "!tools/**/dist/**"],
+      },
+      test: {
+        command: "echo 'No tests defined'",
+        // command: "vp run -r test",
+        input: [{ auto: true }, "!apps/**/dist/**", "!packages/**/dist/**", "!tools/**/dist/**"],
       },
       ready: {
-        command: [
-          // "vp run -r test",
-          // "vp run -r build"
-        ],
-        dependsOn: ["check:full"],
-        cache: true,
+        command: "echo 'Checking if everything is ready...'",
+        dependsOn: ["check:full", "build", "test"],
       },
       push: {
         command: "jj git push",

@@ -10,11 +10,11 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "11.9.0",
+      "version": "11.x.x",
       "onFail": "download"
     }
   },
   "engines": {
-    "node": ">=22.18.0"
+    "node": "24.x.x"
   }
 }
