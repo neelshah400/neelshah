@@ -13,9 +13,19 @@ _: {
     # Shell
     shfmt.enable = true;
     shellcheck.enable = true;
+
+    # Typst
+    typstyle.enable = true;
   };
 
   settings.formatter = {
+    # Priority:
+    # - 10 = broad, lint, fix
+    # - 20 = specific, lint, fix
+    # - 30 = broad, format, fix
+    # - 40 = specific, format, fix
+    # - 50 = specific, lint, check
+
     # (Broad)
     typos.priority = 10;
 
@@ -27,5 +37,8 @@ _: {
     # Shell
     shfmt.priority = 40;
     shellcheck.priority = 50;
+
+    # Typst
+    typstyle.priority = 40;
   };
 }

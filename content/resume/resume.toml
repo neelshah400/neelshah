@@ -1,0 +1,113 @@
+#:schema ../../packages/schemas/dist/resume.schema.json
+
+[basics]
+name = "Neel Shah"
+label = "Software Engineer"
+location = { city = "New York", region = "NY", countryCode = "US" }
+phone = "+17329251305"
+email = "neelshah400@gmail.com"
+url = "https://www.neelshah.dev"
+profiles = [
+  { network = "GitHub", username = "neelshah400", url = "https://github.com/neelshah400" },
+  { network = "LinkedIn", username = "neelshah400", url = "https://www.linkedin.com/in/neelshah400" },
+]
+
+[[work]]
+name = "Morgan Stanley"
+location = "New York, NY"
+position = "Software Engineer II (Associate)"
+startDate = "2026-01-01"
+highlights = [
+  # TODO
+]
+
+[[work]]
+name = "Morgan Stanley"
+location = "New York, NY"
+position = "Software Engineer I (Analyst)"
+startDate = "2024-08-12"
+endDate = "2025-12-31"
+highlights = [
+  # TODO
+]
+
+[[work]]
+name = "Morgan Stanley"
+location = "New York, NY"
+position = "Software Engineering Intern (Analyst)"
+startDate = "2023-06-05"
+endDate = "2023-08-11"
+highlights = [
+  # TODO
+]
+
+[[work]]
+name = "Capgemini Government Solutions"
+location = "McLean, VA"
+position = "Technical Intern"
+startDate = "2022-06-06"
+endDate = "2022-08-19"
+highlights = [
+  # TODO
+]
+
+[[work]]
+name = "Bloomberg"
+location = "Dayton, NJ"
+position = "Software Engineering Intern"
+startDate = "2021-06-28"
+endDate = "2021-08-20"
+highlights = [
+  # TODO
+]
+
+[[work]]
+name = "Bloomberg"
+location = "Dayton, NJ"
+position = "Software Engineering Intern"
+startDate = "2020-07-06"
+endDate = "2020-08-28"
+highlights = [
+  # TODO
+]
+
+[[education]]
+institution = "University of Maryland"
+area = "Computer Science"
+studyType = "B.S."
+startDate = "2021-08-30"
+endDate = "2024-05-22"
+score = "4.0/4.0"
+location = "College Park, MD"
+highlights = [
+  "Summa Cum Laude",
+  "Dean's List",
+  "College Park Scholars: Environment, Technology, & Economy Citation",
+  "Teaching Assistant for CMSC131: Object-Oriented Programming I (Jan 2023 — May 2024)",
+]
+
+[[projects]]
+# TODO
+
+[[skills]]
+name = "Web Development"
+keywords = [
+  "HTML",
+  "CSS",
+  "React",
+  "Angular",
+  "FastAPI",
+  "Flask",
+  "Django",
+  "Express",
+  "Spring Boot",
+  "ASP.NET",
+]
+
+[[skills]]
+name = "DevOps/Infrastructure"
+keywords = ["Linux", "Git", "Docker", "Kubernetes", "CI/CD", "SQL", "Redis", "MongoDB", "Kafka"]
+
+[[skills]]
+name = "AI/ML/Automation"
+keywords = ["Generative AI", "Data Science", "Machine Learning", "Robotic Process Automation"]

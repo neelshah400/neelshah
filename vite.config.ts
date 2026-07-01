@@ -1,5 +1,14 @@
 import { defineConfig } from "vite-plus";
 
+export const DEFAULT_INPUT = [
+  { auto: true },
+  "!node_modules/**",
+  "!.vite-plus/**",
+  "!apps/**/dist/**",
+  "!packages/**/dist/**",
+  "!tools/**/dist/**",
+];
+
 export default defineConfig({
   fmt: {},
   lint: {
@@ -17,7 +26,7 @@ export default defineConfig({
       "fmt:full": {
         command: "vp fmt",
         dependsOn: ["fmt:nix"],
-        input: [{ auto: true }, "!node_modules/**", "!.vite-plus/**"],
+        input: DEFAULT_INPUT,
       },
       "check:nix": {
         command: "nix flake check",
@@ -26,19 +35,23 @@ export default defineConfig({
       "check:full": {
         command: "vp check",
         dependsOn: ["check:nix"],
-        input: [{ auto: true }, "!node_modules/**", "!.vite-plus/**"],
+        input: DEFAULT_INPUT,
+      },
+      generate: {
+        command: "vp run -r generate && vp fmt",
+        cache: false,
       },
       build: {
         command: "vp run -r build",
-        input: [{ auto: true }, "!apps/**/dist/**", "!packages/**/dist/**", "!tools/**/dist/**"],
+        input: DEFAULT_INPUT,
       },
       test: {
         command: "echo 'No tests defined'",
         // command: "vp run -r test",
-        input: [{ auto: true }, "!apps/**/dist/**", "!packages/**/dist/**", "!tools/**/dist/**"],
+        input: DEFAULT_INPUT,
       },
       ready: {
-        command: "echo 'Checking if everything is ready...'",
+        command: "echo 'Repository is ready'",
         dependsOn: ["check:full", "build", "test"],
       },
       push: {
