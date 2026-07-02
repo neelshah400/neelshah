@@ -3,5 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "scripts": {}
+  "scripts": {
+    "dev": "mkdir -p ./dist && typst watch --root ../.. ./src/main.typ ./dist/resume.pdf",
+    "build": "mkdir -p ./dist && typst compile --root ../.. ./src/main.typ ./dist/resume.pdf"
+  }
 }

@@ -81,17 +81,15 @@ highlights = [
 
 [[education]]
 institution = "University of Maryland"
-area = "Computer Science, Minor in Statistics"
+area = "Computer Science"
 studyType = "B.S."
 startDate = "2021-08-30"
 endDate = "2024-05-22"
 score = "4.0/4.0"
 location = "College Park, MD"
 highlights = [
-  "Summa Cum Laude",
-  "Dean's List",
-  "College Park Scholars: Environment, Technology, & Economy Citation",
-  "Teaching Assistant for CMSC131: Object-Oriented Programming I (Jan 2023 — May 2024)",
+  "Summa Cum Laude | Dean's List | College Park Scholars: Environment, Technology, & Economy Citation",
+  "Teaching Assistant for CMSC131: Object-Oriented Programming I (Jan 2023 – May 2024)",
 ]
 
 [[projects]]
