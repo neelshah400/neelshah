@@ -41,6 +41,10 @@ export default defineConfig({
         command: "vp run -r generate && vp fmt",
         cache: false,
       },
+      dev: {
+        command: "vp run -r dev",
+        input: DEFAULT_INPUT,
+      },
       build: {
         command: "vp run -r build",
         input: DEFAULT_INPUT,
